@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week One | Class One | Exercise Four</title>
+</head>
+<body>
+    <form action="">
+        <label for="name">Name</label><br>
+        <input type="text" id="name"><br><br>
+        Gender: <br>
+        <input type="radio" id="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other">
+        <label for="other">Other</label><br><br>
+        <label for="country">Choose Your Country:</label><br>
+        <select name="" id="country">
+            <option value="Unitd States">United States</option>
+            <option value="Canada">Canada</option>
+            <option value="Mexico">Mexico</option>
+        </select><br><br>
+        <label for="terms">Do you agree?</label><br>
+        <label for="yes">Yes</label>
+        <input type="checkbox" id="yes">
+        <label for="no">No</label>
+        <input type="checkbox" id="no"><br><br>
+        <button type="submit" [disabled]="!form.form.valid">
+            Submit
+        </button>
+
+    </form>
+</body>
+</html>
