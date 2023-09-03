@@ -34,7 +34,7 @@ const your_name = prompt("Enter Your Name: ", 'James');
 console.log('Hello ' + your_name);
 
 // Exercise 7
-let users_number = prompt("Enter a number to find it's factorial: ");
+let users_number = prompt("Enter a number to find it's factorial: ", 4);
 let factorial = 0;
 
 while (users_number === '' || isNaN(users_number) || users_number < 0) {
@@ -56,7 +56,7 @@ if (!isNaN(users_number)) {
 console.log(`The factorial of ${users_number} is: ${factorial}`);
 
 // Exercise 8 
-let user_year = prompt('What year is it?');
+let user_year = prompt('What year is it?', 2023);
 
 if (user_year % 4 === 0) {
     console.log('This is a leap year!');
