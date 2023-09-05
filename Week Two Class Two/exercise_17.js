@@ -1,9 +1,15 @@
-function reverse_word(word) {
-    return word.split('').reverse().join('');
+function reverse_word(str) {
+    return str.split('').reverse().join('');
 }
 
 function isPalindrome(word) {
-    if (word == reverse_word(word)) {
+    // remove punctuation
+    let plain_word = word.replace(/[\.,!?']+/g, '');
+    // remove spaces
+    plain_word = plain_word.replace(/\s/g, '');
+    // convert everything to lowercase
+    plain_word = plain_word.toLowerCase();
+    if (plain_word == reverse_word(plain_word)) {
         return true;
     } else {
         return false;
